@@ -7,13 +7,14 @@
 </head>
 
 <body>
-  <iframe class="Gfrom" src="https://docs.google.com/forms/d/e/1FAIpQLSdch5hA6jfwECFqujrytfhhHyeHPg20elbjoc453V0kVkrAWw/viewform?usp=pp_url&entry.1044769275=%23"></iframe>
+  <iframe id="Gfrom" src="https://docs.google.com/forms/d/e/1FAIpQLSdch5hA6jfwECFqujrytfhhHyeHPg20elbjoc453V0kVkrAWw/viewform?usp=pp_url&entry.1044769275=%23"></iframe>
   <a href=""></a>
 
   <script>
     function changeUrl() {
-		  const url = document.getElementByClassName('Gfrom');
+		  const url = document.getElementById('Gfrom');
 		  const col = localStorage.getItem('daijoin');
+	    
 		  url.src = url.src + col.substring(1);
 	  }
     document.addEventListener('DOMContentLoaded',changeUrl());
