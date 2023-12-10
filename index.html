@@ -12,7 +12,7 @@
 
   <script>
     function changeUrl() {
-		  const url = document.getElementById('next');
+		  const url = document.getElementByClassName('Gfrom');
 		  const col = localStorage.getItem('daijoin');
 		  url.href = url.href + col.substring(1);
 	  }
