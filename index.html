@@ -14,7 +14,7 @@
     function changeUrl() {
 		  const url = document.getElementByClassName('Gfrom');
 		  const col = localStorage.getItem('daijoin');
-		  url.href = url.href + col.substring(1);
+		  url.src = url.src + col.substring(1);
 	  }
     document.addEventListener('DOMContentLoaded',changeUrl());
   </script>
